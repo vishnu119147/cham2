@@ -62,7 +62,7 @@ export function Hero() {
           <div className="polaroid-tape" />
           <div className="rounded-[2px] bg-white p-3 pb-12 shadow-2xl shadow-roseblush-400/30 transition-transform duration-500 hover:rotate-0">
             <Photo
-              src="/photos/us.JPEG"
+              src={import.meta.env.BASE_URL + 'photos/us.JPEG'}
               alt="Champu and me"
               className="aspect-square rounded-[2px]"
             />

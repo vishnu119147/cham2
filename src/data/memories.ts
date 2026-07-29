@@ -1,3 +1,6 @@
+const BASE = import.meta.env.BASE_URL;
+const photoPath = (name: string) => `${BASE}photos/${name}`;
+
 export type Memory = {
   id: string;
   title: string;
@@ -16,7 +19,7 @@ export const memories: Memory[] = [
     place: 'College Corridor',
     blurb:
       'Two strangers bumped into each other outside the library. You laughed at your own clumsy spill of books — and just like that, I had a favourite person.',
-    photo: '/photos/8.JPEG',
+    photo: photoPath('8.JPEG'),
     accent: 'rose',
   },
   {
@@ -26,7 +29,7 @@ export const memories: Memory[] = [
     place: 'The Main Stage',
     blurb:
       'We danced like nobody was watching (everyone was). You lip-synced the wrong lyrics the whole night and I have never loved a duet more.',
-    photo: '/photos/20.JPEG',
+    photo: photoPath('20.JPEG'),
     accent: 'gold',
   },
   {
@@ -36,7 +39,7 @@ export const memories: Memory[] = [
     place: 'Two Ends of a Phone Call',
     blurb:
       'A memorable bus journey, assignments we never finished, secrets we never kept, and a friendship that quietly became the best part of every single day.',
-    photo: '/photos/5.JPG',
+    photo: photoPath('5.JPG'),
     accent: 'sage',
   },
   {
@@ -46,7 +49,7 @@ export const memories: Memory[] = [
     place: 'The Campus Gates',
     blurb:
       'Tissues, tears, and a hundred promises to never drift. We did not. We will not. Some chapters end only on paper.',
-    photo: '/photos/13.JPEG',
+    photo: photoPath('13.JPEG'),
     accent: 'rose',
   },
   {
@@ -56,7 +59,7 @@ export const memories: Memory[] = [
     place: 'The Shore at Dusk',
     blurb:
       'The sea at golden hour, waves rushing in, and the two of us just standing there — shoes off, plans abandoned, nowhere else to be. Nobody said a word for a while. We didn\'t need to.',
-    photo: '/photos/19.JPEG',
+    photo: photoPath('19.JPEG'),
     accent: 'gold',
   },
   {
@@ -66,7 +69,7 @@ export const memories: Memory[] = [
     place: 'Every Road We Walked',
     blurb:
       'Three of us on that mud path by the lake — no plan, no destination, every direction was the right one. These are the days that sneak up on you and become your favourite ones.',
-    photo: '/photos/6.JPG',
+    photo: photoPath('6.JPG'),
     accent: 'sage',
   },
 ];
@@ -75,98 +78,98 @@ export type GalleryShot = { src: string; caption: string; span?: boolean };
 
 export const gallery: GalleryShot[] = [
   {
-    src: '/photos/us.JPEG',
+    src: photoPath('us.JPEG'),
     caption: 'us, always',
     span: true,
   },
   {
-    src: '/photos/ethnic_day.jpg',
+    src: photoPath('ethnic_day.jpg'),
     caption: 'A colorful festival day',
     span: true,
   },
   {
-    src: '/photos/redsea.jpg',
+    src: photoPath('redsea.jpg'),
     caption: 'Golden hour by the red sea',
     span: true,
   },
   {
-    src: '/photos/1.JPG',
+    src: photoPath('1.JPG'),
     caption: 'First photo from our adventure',
   },
   {
-    src: '/photos/2.JPG',
+    src: photoPath('2.JPG'),
     caption: 'The road that felt endless',
   },
   {
-    src: '/photos/3.JPG',
+    src: photoPath('3.JPG'),
     caption: 'Laughing under open skies',
   },
   {
-    src: '/photos/4.JPG',
+    src: photoPath('4.JPG'),
     caption: 'Street-side smiles',
   },
   {
-    src: '/photos/5.JPG',
+    src: photoPath('5.JPG'),
     caption: 'When every moment was a snapshot',
   },
   {
-    src: '/photos/6.JPG',
+    src: photoPath('6.JPG'),
     caption: 'Sunlight in every frame',
   },
   {
-    src: '/photos/7.JPG',
+    src: photoPath('7.JPG'),
     caption: 'The one where we stopped for coffee',
   },
   {
-    src: '/photos/8.JPEG',
+    src: photoPath('8.JPEG'),
     caption: 'A quiet sunset pause',
   },
   {
-    src: '/photos/9.JPEG',
+    src: photoPath('9.JPEG'),
     caption: 'Hands together, always',
   },
   {
-    src: '/photos/16.JPEG',
+    src: photoPath('16.JPEG'),
     caption: 'A warm evening on the beach',
   },
   {
-    src: '/photos/11.JPEG',
+    src: photoPath('11.JPEG'),
     caption: 'The world seems softer with you',
   },
   {
-    src: '/photos/12.JPEG',
+    src: photoPath('12.JPEG'),
     caption: 'That laugh you can never hide',
   },
   {
-    src: '/photos/13.JPEG',
+    src: photoPath('13.JPEG'),
     caption: 'A spontaneous shimmy',
   },
   {
-    src: '/photos/22.jpg',
+    src: photoPath('22.jpg'),
     caption: 'The sky that matched your dress',
   },
   {
-    src: '/photos/15.jpg',
+    src: photoPath('15.jpg'),
     caption: 'Simply us',
   },
   {
-    src: '/photos/16.JPEG',
+    src: photoPath('16.JPEG'),
     caption: 'The memory of that road',
   },
   {
-    src: '/photos/17.JPEG',
+    src: photoPath('17.JPEG'),
     caption: 'The way we leaned into the moment',
   },
   {
-    src: '/photos/18.JPEG',
+    src: photoPath('18.JPEG'),
     caption: 'Birthday cakee',
   },
   {
-    src: '/photos/19.JPEG',
+    src: photoPath('19.JPEG'),
     caption: 'A calm, golden memory',
   },
   {
-    src: '/photos/20.JPEG',
+    src: photoPath('20.JPEG'),
     caption: 'The best day, framed',
   },
 ];
